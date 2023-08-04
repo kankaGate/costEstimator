@@ -1,0 +1,72 @@
+body {
+    background-color: #e9dfff;    
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    color: #2c2c2c;
+}
+
+h1 {
+    color: #53319c;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    padding: 0 64px 64px 64px;
+}
+
+.tabs {
+    color: #c8afff;
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: space-around;
+    margin: 0 0 32px 0;
+    padding: 16px;
+}
+
+.tabs p {
+    padding: 8px;
+}
+
+.tabs p:hover {
+    color: #53319c;
+    cursor: pointer;
+}
+
+.tabs .active {
+    color: #53319c;
+    position: relative;
+}
+
+.line {
+    height: 3px;
+    background-color: #e7e7e7;
+    width: 100%;
+    position: absolute;
+    top: 98px;
+}
+
+.tabs .active::before {
+    content: "";
+    width: 200%;
+    height: 4px;
+    background-color: #53319c;
+    position: absolute;
+    bottom: -32px;
+    left: -50%;
+    z-index: 2;
+    border-radius: 10px;
+}
