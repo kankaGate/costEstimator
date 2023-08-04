@@ -70,3 +70,40 @@ h1 {
     z-index: 2;
     border-radius: 10px;
 }
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-wrapper img {
+    height: 40px;
+    margin: 0 16px;
+}
+
+.toggle {
+    background-color: #53319c;
+    height: 32px;
+    width: 140px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 4px 0 16px;
+    font-size: 12px;
+}
+
+.toggle span:first-of-type {
+
+}
+
+.toggle span:last-of-type {
+    background-color: white;
+    color: #53319c;
+    padding: 4px 16px;
+    border-radius: 20px;
+}
